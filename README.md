@@ -1,7 +1,7 @@
 # engaged-web
 web site for engagedai.org
 
-```
+```bash
 # 1. Install Node.js and npm
 sudo apt update
 sudo apt install nodejs npm
