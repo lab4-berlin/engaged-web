@@ -2,25 +2,26 @@
 web site for engagedai.org
 
 ```bash
-# 1. Install Node.js and npm
+# Install Node.js and npm
 sudo apt update
 sudo apt install nodejs npm
 
-# 2. Clone your project repository
+# Clone your project repository
 git clone [this-repository-url]
-cd engaged-web
 
-# 3. Install dependencies
+# Change ownership of the entire web directory to www-data (Nginx user)
+sudo chown -R www-data:www-data engaged-web
+
+# Install dependencies and build
+cd engaged-web
 npm install
 npm audit fix
-
-# 4. Build the project
 npm run build
 
-# 5. Install and configure Nginx
+# Install and configure Nginx
 sudo apt install nginx
 
-# 6. Configure Nginx to serve your built files
+# Configure Nginx to serve your built files
 sudo nano /etc/nginx/sites-available/default
 
 # Add this configuration:
@@ -35,10 +36,17 @@ server {
     }
 }
 
-# 7. Restart Nginx
+# Give access rights to both ubuntu and nginx users
+sudo usermod -a -G www-data ubuntu
+sudo chmod -R 755 /home/ubuntu/engaged-web
+sudo chown -R www-data:www-data /home/ubuntu/engaged-web
+sudo chmod +x /home/ubuntu
+
+# Restart Nginx
 sudo systemctl restart nginx
 
-# 8. Let Nginx start by every reboot
+# Let Nginx start by every reboot
 sudo systemctl enable nginx
 ```
+
 
