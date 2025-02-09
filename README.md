@@ -37,5 +37,8 @@ server {
 
 # 7. Restart Nginx
 sudo systemctl restart nginx
+
+# 8. Let Nginx start by every reboot
+sudo systemctl enable nginx
 ```
 
