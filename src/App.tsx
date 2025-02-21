@@ -1,14 +1,16 @@
 import React from 'react';
-import { 
-  Brain, 
-  Presentation, 
-  Users, 
-  BarChart3, 
-  Shield, 
+import {
+  Brain,
+  Presentation,
+  Users,
+  BarChart3,
+  Shield,
   School,
   CheckCircle,
   ArrowRight,
-  GraduationCap
+  GraduationCap,
+  Linkedin,
+  Mail
 } from 'lucide-react';
 
 function App() {
@@ -19,10 +21,7 @@ function App() {
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Brain className="w-8 h-8" />
-            <span className="text-2xl font-bold">
-              <span className="text-white">engag</span>
-              <span className="text-[#e2511a]">ED</span>
-            </span>
+            <span className="text-2xl font-bold">engagED</span>
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#features" className="hover:text-blue-200">Features</a>
@@ -41,7 +40,7 @@ function App() {
               Transform Your Classroom with AI-Powered Engagement
             </h1>
             <p className="text-xl mb-8">
-              EngagED uses AI to automatically generate engaging questions from your lecture in real-time, 
+              EngagED uses AI to automatically generate engaging questions from your lecture in real-time,
               creating an interactive learning environment without any extra preparation.
             </p>
             <div className="flex space-x-4">
@@ -106,9 +105,9 @@ function App() {
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" 
-                alt="Classroom engagement" 
+              <img
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+                alt="Classroom engagement"
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -172,40 +171,72 @@ function App() {
           <h2 className="text-3xl font-bold text-center mb-16 text-[#1f5c99]">Meet Our Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <img 
+              <img
                 src="images/team/evgeniya.jpeg"
                 alt="Dr. Evgeniya Vorobyeva"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-[#1f5c99]">Dr. Evgeniya Vorobyeva</h3>
-              <p className="text-[#1f5c99]">Chief Executive Officer</p>
+              <p className="text-[#1f5c99] mb-2">Chief Executive Officer</p>
+              <div className="flex justify-center space-x-3">
+                <a href="https://www.linkedin.com/in/evgeniya-vorobyeva/" target="_blank" rel="noopener noreferrer" className="text-[#0077b5] hover:text-[#0077b5]/80">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="mailto:evgeniya@engagedai.org" className="text-[#1f5c99] hover:text-[#1f5c99]/80">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
             </div>
             <div className="text-center">
-              <img 
+              <img
                 src="images/team/ilya.jpeg"
                 alt="Ilya Vladimirskiy"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-[#1f5c99]">Ilya Vladimirskiy</h3>
-              <p className="text-[#1f5c99]">Chief Technology Officer</p>
+              <p className="text-[#1f5c99] mb-2">Chief Technology Officer</p>
+              <div className="flex justify-center space-x-3">
+                <a href="https://www.linkedin.com/in/bkmy43/" target="_blank" rel="noopener noreferrer" className="text-[#0077b5] hover:text-[#0077b5]/80">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="mailto:ilya@engagedai.org" className="text-[#1f5c99] hover:text-[#1f5c99]/80">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
             </div>
             <div className="text-center">
-              <img 
+              <img
                 src="images/team/kirill.jpeg"
                 alt="Prof. Dr. Kirill Bolotin"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-[#1f5c99]">Prof. Dr. Kirill Bolotin</h3>
-              <p className="text-[#1f5c99]">Scientific Advisor</p>
+              <p className="text-[#1f5c99] mb-2">Scientific Advisor</p>
+              <div className="flex justify-center space-x-3">
+                <a href="https://www.linkedin.com/in/kirill-bolotin-a198881/" target="_blank" rel="noopener noreferrer" className="text-[#0077b5] hover:text-[#0077b5]/80">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="mailto:kirill@engagedai.org" className="text-[#1f5c99] hover:text-[#1f5c99]/80">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
             </div>
             <div className="text-center">
-              <img 
+              <img
                 src="images/team/olya.jpeg"
                 alt="Dr. Olya Vvedenskaya"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-[#1f5c99]">Dr. Olya Vvedenskaya</h3>
-              <p className="text-[#1f5c99]">Marketing Advisor</p>
+              <p className="text-[#1f5c99] mb-2">Marketing Advisor</p>
+              <div className="flex justify-center space-x-3">
+                <a href="https://www.linkedin.com/in/olya-vv/" target="_blank" rel="noopener noreferrer" className="text-[#0077b5] hover:text-[#0077b5]/80">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="mailto:olya@engagedai.org" className="text-[#1f5c99] hover:text-[#1f5c99]/80">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -231,10 +262,7 @@ function App() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Brain className="w-6 h-6" />
-                <span className="text-xl font-bold">
-                  <span className="text-white">engag</span>
-                  <span className="text-[#e2511a]">ED</span>
-                </span>
+                <span className="text-xl font-bold">engagED</span>
               </div>
               <p className="text-gray-400">
                 Transforming education through AI-powered engagement
