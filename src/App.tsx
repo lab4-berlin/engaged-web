@@ -21,7 +21,10 @@ function App() {
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Brain className="w-8 h-8" />
-            <span className="text-2xl font-bold">engagED</span>
+            <span className="text-2xl font-bold">
+              <span className="text-white">engag</span>
+              <span className="text-[#e2511a]">ED</span>
+            </span>
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#features" className="hover:text-blue-200">Features</a>
@@ -262,7 +265,10 @@ function App() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Brain className="w-6 h-6" />
-                <span className="text-xl font-bold">engagED</span>
+                <span className="text-xl font-bold">
+                  <span className="text-white">engag</span>
+                  <span className="text-[#e2511a]">ED</span>
+                </span>
               </div>
               <p className="text-gray-400">
                 Transforming education through AI-powered engagement
