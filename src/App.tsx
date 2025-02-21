@@ -173,7 +173,7 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <img 
-                src="/images/team/evgeniya.jpg"
+                src="/images/team/evgeniya.jpeg"
                 alt="Dr. Evgeniya Vorobyeva"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
@@ -182,7 +182,7 @@ function App() {
             </div>
             <div className="text-center">
               <img 
-                src="/images/team/ilya.jpg"
+                src="/images/team/ilya.jpeg"
                 alt="Ilya Vladimirskiy"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
@@ -191,7 +191,7 @@ function App() {
             </div>
             <div className="text-center">
               <img 
-                src="/images/team/kirill.jpg"
+                src="/images/team/kirill.jpeg"
                 alt="Prof. Dr. Kirill Bolotin"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
@@ -200,7 +200,7 @@ function App() {
             </div>
             <div className="text-center">
               <img 
-                src="/images/team/olya.jpg"
+                src="/images/team/olya.jpeg"
                 alt="Dr. Olya Vvedenskaya"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
