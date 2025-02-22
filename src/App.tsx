@@ -110,13 +110,6 @@ function App() {
             <span className="text-[#1f5c99]"> Works</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src={`${base}images/students2.jpeg`}
-                alt="Engaged Students"
-                className="rounded-lg shadow-xl"
-              />
-            </div>
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-[#1f5c99]/10 p-3 rounded-full">
@@ -146,6 +139,13 @@ function App() {
                 </div>
               </div>
             </div>
+            <div>
+              <img
+                src={`${base}images/students2.jpeg`}
+                alt="Engaged Students"
+                className="rounded-lg shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -166,6 +166,28 @@ function App() {
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="text-4xl font-bold text-[#e2511a] mb-4">1.5+</div>
               <p className="text-[#1f5c99]">Points higher performance</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pitch Video Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-16">
+            <span className="text-[#1f5c99]">Watch Our Pitch Video</span>
+          </h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="aspect-video rounded-lg shadow-xl overflow-hidden bg-white">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/BxAr7zy96u0"
+                title="EngagED Pitch Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>
